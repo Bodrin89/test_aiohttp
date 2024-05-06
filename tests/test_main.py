@@ -33,3 +33,14 @@ async def test_hash_string_invalid(aiohttp_client):
     data = await resp.json()
     assert resp.status == 400
     assert 'validation_errors' in data
+
+
+async def test_hash_string_invalid_json(aiohttp_client):
+    """
+    Тест проверки не валидного запроса
+    """
+    client = await aiohttp_client(create_app())
+    resp = await client.post(path='/hash')
+    data = await resp.json()
+    assert resp.status == 400
+    assert 'validation_errors' in data
