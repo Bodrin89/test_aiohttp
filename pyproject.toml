@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "test-work-aiohttp"
+version = "0.1.0"
+description = ""
+authors = ["vladimirmac <vladimirbodrin89@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohttp = "^3.9.5"
+click = "^8.1.7"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.3"
+pre-commit = "^3.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
