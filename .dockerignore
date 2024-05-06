@@ -1,0 +1,7 @@
+
+**
+!src
+!tests
+!pyproject.toml
+!poetry.lock
+!main.py
